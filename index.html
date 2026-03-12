@@ -12,7 +12,7 @@
 </head>
 
 <body>
-
+    <!-- barra di navigazione -->
 
     <nav class="navbar navbar-expand-lg height-nav bg-dark">
         <div class="container-fluid">
@@ -33,27 +33,30 @@
         </div>
     </nav>
 
+    <!-- container del titolo e della tabella -->
+
     <div class="container ">
         <div class="row space-between my-4">
             <h2 class="col-5   ">Catalogo Libri</h2>
             <button class="col-3 me-3 bg-primary button-libro">Aggiungi Libro</button>
         </div>
 
-        <!-- Tabella mobile/desktop -->
+        <!-- Tabella -->
+
         <div class="table-responsive">
             <table class="table table-hover">
                 <thead>
                     <tr>
-                        <th>Titolo</th>
-                        <th class="d-none d-md-table-cell">Data Prestito</th>
-                        <th>Stato</th>
-                        <th>azioni</th>
+                        <th class="col-md">Titolo</th>
+                        <th class="d-none d-md-table-cell col-md-2">Data Prestito</th>
+                        <th class="col-md-2 col-lg-3">Stato</th>
+                        <th class="col-md-2 col-lg-1">azioni</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="table-light">
-                        <td>La pianta delle stelle</td>
-                        <td class="d-none d-md-table-cell">2026-03-01</td>
+                        <td>I pilastri della terra</td>
+                        <td class="d-none d-md-table-cell">-</td>
                         <td><span class="badge bg-success">Disponibile</span></td>
                         <td>
                             <div>
@@ -67,8 +70,132 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Il nome della rosa</td>
-                        <td class="d-none d-md-table-cell">2026-02-15</td>
+                        <td>I promessi sposi</td>
+                        <td class="d-none d-md-table-cell">-</td>
+                        <td><span class="badge bg-success">Disponibile</span></td>
+                        <td>
+                            <div>
+                                <button class=" btn-azioni" title="Modifica">
+                                    <i class="bi bi-pencil txt-center"></i>
+                                </button>
+                                <button class="btn-azioni " title="Elimina">
+                                    <i class="bi bi-trash txt-center"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="table-light">
+                        <td>Il signore degli anelli</td>
+                        <td class="d-none d-md-table-cell">18/10/2023</td>
+                        <td><span class="badge bg-warning">In prestito</span></td>
+                        <td>
+                            <div>
+                                <button class=" btn-azioni" title="Modifica">
+                                    <i class="bi bi-pencil txt-center"></i>
+                                </button>
+                                <button class="btn-azioni " title="Elimina">
+                                    <i class="bi bi-trash txt-center"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Harry Potter e la pietra filosofale</td>
+                        <td class="d-none d-md-table-cell">-</td>
+                        <td><span class="badge bg-success">Disponibile</span></td>
+                        <td>
+                            <div>
+                                <button class=" btn-azioni" title="Modifica">
+                                    <i class="bi bi-pencil txt-center"></i>
+                                </button>
+                                <button class="btn-azioni " title="Elimina">
+                                    <i class="bi bi-trash txt-center"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="table-light">
+                        <td>Il codice Da Vinci</td>
+                        <td class="d-none d-md-table-cell">-</td>
+                        <td><span class="badge bg-danger">Non disponibile</span></td>
+                        <td>
+                            <div>
+                                <button class=" btn-azioni" title="Modifica">
+                                    <i class="bi bi-pencil txt-center"></i>
+                                </button>
+                                <button class="btn-azioni " title="Elimina">
+                                    <i class="bi bi-trash txt-center"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Shining</td>
+                        <td class="d-none d-md-table-cell">-</td>
+                        <td><span class="badge bg-success">Disponibile</span></td>
+                        <td>
+                            <div>
+                                <button class=" btn-azioni" title="Modifica">
+                                    <i class="bi bi-pencil txt-center"></i>
+                                </button>
+                                <button class="btn-azioni " title="Elimina">
+                                    <i class="bi bi-trash txt-center"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="table-light">
+                        <td>La divina commedia</td>
+                        <td class="d-none d-md-table-cell">21/09/2023</td>
+                        <td><span class="badge bg-warning">In prestito</span></td>
+                        <td>
+                            <div>
+                                <button class=" btn-azioni" title="Modifica">
+                                    <i class="bi bi-pencil txt-center"></i>
+                                </button>
+                                <button class="btn-azioni " title="Elimina">
+                                    <i class="bi bi-trash txt-center"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Il trono di spade</td>
+                        <td class="d-none d-md-table-cell">-</td>
+                        <td><span class="badge bg-success">Disponibile</span></td>
+                        <td>
+                            <div>
+                                <button class=" btn-azioni" title="Modifica">
+                                    <i class="bi bi-pencil txt-center"></i>
+                                </button>
+                                <button class="btn-azioni " title="Elimina">
+                                    <i class="bi bi-trash txt-center"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="table-light">
+                        <td>Il mondo di Sofia</td>
+                        <td class="d-none d-md-table-cell">-</td>
+                        <td><span class="badge bg-danger">Non disponibile</span></td>
+                        <td>
+                            <div>
+                                <button class=" btn-azioni" title="Modifica">
+                                    <i class="bi bi-pencil txt-center"></i>
+                                </button>
+                                <button class="btn-azioni " title="Elimina">
+                                    <i class="bi bi-trash txt-center"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Le cronache di Narnia: il leone, la strega e l'armadio</td>
+                        <td class="d-none d-md-table-cell">25/07/2023</td>
                         <td><span class="badge bg-warning">In prestito</span></td>
                         <td>
                             <div>
@@ -83,8 +210,8 @@
                     </tr>
 
                     <tr class="table-light">
-                        <td>La pianta delle stelle</td>
-                        <td class="d-none d-md-table-cell">2026-03-01</td>
+                        <td>Il piccolo principe</td>
+                        <td class="d-none d-md-table-cell">-</td>
                         <td><span class="badge bg-success">Disponibile</span></td>
                         <td>
                             <div>
@@ -98,133 +225,9 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Il nome della rosa</td>
-                        <td class="d-none d-md-table-cell">2026-02-15</td>
-                        <td><span class="badge bg-warning">In prestito</span></td>
-                        <td>
-                            <div>
-                                <button class=" btn-azioni" title="Modifica">
-                                    <i class="bi bi-pencil txt-center"></i>
-                                </button>
-                                <button class="btn-azioni " title="Elimina">
-                                    <i class="bi bi-trash txt-center"></i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr class="table-light">
-                        <td>La pianta delle stelle</td>
-                        <td class="d-none d-md-table-cell">2026-03-01</td>
+                        <td>La storia infinita</td>
+                        <td class="d-none d-md-table-cell">-</td>
                         <td><span class="badge bg-success">Disponibile</span></td>
-                        <td>
-                            <div>
-                                <button class=" btn-azioni" title="Modifica">
-                                    <i class="bi bi-pencil txt-center"></i>
-                                </button>
-                                <button class="btn-azioni " title="Elimina">
-                                    <i class="bi bi-trash txt-center"></i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Il nome della rosa</td>
-                        <td class="d-none d-md-table-cell">2026-02-15</td>
-                        <td><span class="badge bg-warning">In prestito</span></td>
-                        <td>
-                            <div>
-                                <button class=" btn-azioni" title="Modifica">
-                                    <i class="bi bi-pencil txt-center"></i>
-                                </button>
-                                <button class="btn-azioni " title="Elimina">
-                                    <i class="bi bi-trash txt-center"></i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr class="table-light">
-                        <td>La pianta delle stelle</td>
-                        <td class="d-none d-md-table-cell">2026-03-01</td>
-                        <td><span class="badge bg-success">Disponibile</span></td>
-                        <td>
-                            <div>
-                                <button class=" btn-azioni" title="Modifica">
-                                    <i class="bi bi-pencil txt-center"></i>
-                                </button>
-                                <button class="btn-azioni " title="Elimina">
-                                    <i class="bi bi-trash txt-center"></i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Il nome della rosa</td>
-                        <td class="d-none d-md-table-cell">2026-02-15</td>
-                        <td><span class="badge bg-warning">In prestito</span></td>
-                        <td>
-                            <div>
-                                <button class=" btn-azioni" title="Modifica">
-                                    <i class="bi bi-pencil txt-center"></i>
-                                </button>
-                                <button class="btn-azioni " title="Elimina">
-                                    <i class="bi bi-trash txt-center"></i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr class="table-light">
-                        <td>La pianta delle stelle</td>
-                        <td class="d-none d-md-table-cell">2026-03-01</td>
-                        <td><span class="badge bg-success">Disponibile</span></td>
-                        <td>
-                            <div>
-                                <button class=" btn-azioni" title="Modifica">
-                                    <i class="bi bi-pencil txt-center"></i>
-                                </button>
-                                <button class="btn-azioni " title="Elimina">
-                                    <i class="bi bi-trash txt-center"></i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Il nome della rosa</td>
-                        <td class="d-none d-md-table-cell">2026-02-15</td>
-                        <td><span class="badge bg-warning">In prestito</span></td>
-                        <td>
-                            <div>
-                                <button class=" btn-azioni" title="Modifica">
-                                    <i class="bi bi-pencil txt-center"></i>
-                                </button>
-                                <button class="btn-azioni " title="Elimina">
-                                    <i class="bi bi-trash txt-center"></i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr class="table-light">
-                        <td>La pianta delle stelle</td>
-                        <td class="d-none d-md-table-cell">2026-03-01</td>
-                        <td><span class="badge bg-success">Disponibile</span></td>
-                        <td>
-                            <div>
-                                <button class=" btn-azioni" title="Modifica">
-                                    <i class="bi bi-pencil txt-center"></i>
-                                </button>
-                                <button class="btn-azioni " title="Elimina">
-                                    <i class="bi bi-trash txt-center"></i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Il nome della rosa</td>
-                        <td class="d-none d-md-table-cell">2026-02-15</td>
-                        <td><span class="badge bg-warning">In prestito</span></td>
                         <td>
                             <div>
                                 <button class=" btn-azioni" title="Modifica">
@@ -241,6 +244,9 @@
         </div>
     </div>
 
+
+    <!-- sezione Todo -->
+
     <div class="container mt-2">
 
         <div class="row justify-content-center">
@@ -248,7 +254,7 @@
 
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="mb-0">Todo</h3>
+                        <h3 class="mb-0 pb-2">Todo</h3>
                     </div>
 
                     <div class="card-body">
@@ -269,6 +275,69 @@
                                 <input class="form-check-input me-2" type="checkbox">
                                 Ordinare nuovi libri
                             </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- sezione faq -->
+     
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="">
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="mb-0 pb-2">F.A.Q.</h3>
+                    </div>
+
+                    <div class="card-body px-4">
+
+                        <div class="accordion accordion-flush" id="faqAccordion">
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed px-0" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq1">
+                                        Come aggiungere un nuovo libro?
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body px-0">
+                                        Clicca sul pulsante "Aggiungi Libro".
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed px-0" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq2">
+                                        Come posso accedere all'anagrafica utenti?
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body px-0">
+                                        Puoi accedere della dashboard.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed px-0" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq3">
+                                        Posso usare questa dashboard da mobile?
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body px-0">
+                                        Sì, la dashboard è responsive.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
