@@ -8,3 +8,29 @@
     display: inline-block;
 
 }
+
+.space-between{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-libro{
+    border-radius: 7px;
+    padding: 10px;
+    color: white;
+    font-weight: 300;
+}
+
+.btn-azioni{
+    border-color: lightgray;
+    border: 1px solid;
+    height: 25px;
+    width: 25px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.txt-center{
+    position: absolute;
+    translate: -50% -50%;
+}
